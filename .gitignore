@@ -1,0 +1,20 @@
+# Local-only files (project set-up step 10)
+/data
+/literature
+nowlin-style-profile.md
+
+# Generated at render time by scripts/export-cited-refs.R
+references.bib
+american-political-science-association.csl
+
+# Quarto / R
+.quarto/
+.Rhistory
+.RData
+.Rproj.user/
+
+# OS
+.DS_Store
+
+/.quarto/
+**/*.quarto_ipynb

@@ -1,0 +1,17 @@
+{
+  "hash": "e842b411fd314ebdd6330acec3fc5574",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"Core Values and Trust in Experts Before and After COVID-19\"\nbibliography: references.bib\ncsl: american-political-science-association.csl\nfig-cap-location: top\nfontfamily: ebgaramond\nlink-bibliography: false\nformat:\n  html:\n    author:\n      - name: Matthew C. Nowlin\n        email: matthew.nowlin@uta.edu\n        corresponding: true\n        affiliations:\n          - name: University of Texas at Arlington\n            department: Department of Political Science\n  pdf:\n    author:\n      - name: \"Matthew C. Nowlin^[Associate Professor, Department of Political Science, University of Texas at Arlington. Email: matthew.nowlin@uta.edu]\"\n    include-in-header:\n      text: |\n        \\usepackage{setspace}\n        \\usepackage{dcolumn}\n        \\usepackage{float}\n        \\usepackage{amsmath}\n        \\usepackage{ulem}\n        \\addtokomafont{disposition}{\\rmfamily}\n        \\normalem\n  docx:\n    author:\n      - name: \"Matthew C. Nowlin^[Associate Professor, Department of Political Science, University of Texas at Arlington. Email: matthew.nowlin@uta.edu]\"\n    reference-doc: custom-reference-doc.docx\n---\n\n\n\n\\newpage\n\n# References",
+    "supporting": [
+      "values-expert-trust-covid_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": null,
+    "postProcess": false
+  }
+}
