@@ -37,7 +37,7 @@ format:
 source("scripts/analysis.R")
 ```
 
-<!-- target journal is Political Behavior; 9000 word limit -->
+<!-- target journal is Political Behavior; 9000 word limit OR Risk Analysis -->
 
 # Introduction 
 
