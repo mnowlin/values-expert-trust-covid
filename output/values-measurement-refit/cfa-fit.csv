@@ -1,0 +1,4 @@
+model,n,chisq.scaled,df.scaled,cfi.scaled,tli.scaled,rmsea.scaled,cfi.robust,tli.robust,rmsea.robust,srmr
+M6_original_halfB,2500,4016.023,291,0.969,0.965,0.072,0.854,0.837,0.111,0.07
+M6_trimmed_halfB,2500,2456.577,222,0.981,0.978,0.063,0.87,0.852,0.117,0.058
+M6_trimmed_full,5000,4695.345,222,0.98,0.977,0.063,0.89,0.875,0.105,0.056

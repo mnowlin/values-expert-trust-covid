@@ -1,0 +1,6 @@
+factor,n_items,omega_ordinal
+ECON,15,0.961
+AUTH,4,0.845
+RELIG,2,0.888
+DISTRUST,3,0.921
+INEFF,2,0.661

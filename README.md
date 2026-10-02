@@ -1,20 +1,17 @@
 # Core Values and Trust in Experts Before and After COVID-19
 
 Manuscript and reproducible analysis examining how pre-pandemic core values
-shape trust in scientists and experts, and how COVID-19 changed those
-relationships. The five values are:
+shape trust in scientists and experts, and which of them predicted change in
+that trust across COVID-19. The predictors are:
 
-- egalitarian–individualist economic values
-- authoritarianism
-- religiosity
-- social distrust
-- political inefficacy
+- core values: economic egalitarianism–individualism, authoritarianism, religiosity
+- civic orientations: social distrust, political inefficacy
 
 The data come from the Democracy Fund Voter Study Group's VOTER Survey panel.
 The analytic sample is the 2,544 respondents interviewed in both July 2017
-(before COVID) and November 2020 (during COVID). Value measures come from the
-2011, 2016, and 2017 waves. COVID-era mediators and exposure measures come
-from the September 2020 wave.
+(before COVID) and November 2020 (during COVID). Value and civic-orientation
+measures come from the 2016 and 2017 waves. COVID exposure comes from the
+September and November 2020 waves, and COVID attitudes from November 2020.
 
 ## Layout
 
@@ -26,14 +23,20 @@ LOG.md                               Running session log (newest entry first)
 renv.lock, renv/, .Rprofile          renv package environment
 scripts/
   analysis.R                         Sourced by the qmd: builds the analytic panel,
-                                       recodes values, outcomes, mediators, and controls,
-                                       and creates the objects used in the manuscript
+                                       recodes all variables, fits the SEMs, and builds
+                                       the tables, figures, and inline numbers
+  values-measurement-refit.R         Refit of the values measurement model (trimmed ECON)
   export-cited-refs.R                Pre-render step: trims the master .bib to cited keys
 research-design/
   expert-trust-covid-design.md       Research design: RQs, hypotheses, identification,
                                        models, and variable list
-  voter-measurement-pass.md          EFA/CFA that produced the five value dimensions
-data/                                VOTER Survey data and codebook (NOT in git -- see below)
+  voter-measurement-pass.md          EFA/CFA that produced the value and civic-orientation
+                                       factors (§7: trimmed refit)
+output/
+  model-results.rds                  Cached model results (tables only) used by analysis.R
+  values-measurement-refit/          Fit, loadings, omega, and modification indices
+data/                                VOTER Survey data, codebook, and item wording
+                                       (value-construct-items.md) -- NOT in git, see below
 literature/                          Background literature (NOT in git -- local only)
 ```
 
@@ -68,5 +71,8 @@ The `data/` folder is **not tracked in git**. Restore it before running the anal
 - Quarto's freeze cache (`_freeze/`) is enabled (`execute: freeze: auto` in
   `_quarto.yaml`), so code chunks are only re-executed when the qmd or its
   upstream R sources change.
+- Fitting the models takes about 5 minutes. `analysis.R` caches the results
+  in `output/model-results.rds` and refits only when `analysis.R` or the data
+  file is newer than the cache. Delete the file to force a refit.
 - `LOG.md` records what changed and why for each work session; add a new
   entry at the top.

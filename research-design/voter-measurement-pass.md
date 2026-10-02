@@ -196,4 +196,21 @@ This bears directly on v2 §2.2 and H4/H11:
 4. **Extended item set:** add the exclusive-hierarchy items (`usa_being_*`, `culture_pref`, `immi_muslim`) and test whether an inclusive/exclusive hierarchy factor separates from AUTH and RELIG. That is the measurement half of H6.
 5. **Decide on scoring**: factor scores from M6 vs. unit-weighted scales. Either way, report a content-light variant without the gender-role items.
 
+------------------------------------------------------------------------
+
+## 7. Addendum: M6 without the gender-role and fatalism items
+
+*Added 2026-10-01 for the values–expert-trust project.* ECON was trimmed to its 12 economic items (8 egalitarian, 4 individualist), dropping `sexism_roles_2016`, `class_manlymen_2017` and `fatalism2_2011`. They are not economic content, loaded weakly on ECON, and the two gender-role items were the largest source of cross-loading misfit (§3). Script: `scripts/values-measurement-refit.R`; outputs in `output/values-measurement-refit/`. The script reproduces the half-B split (seed 20261001) and checks that the original M6 fit is reproduced exactly before fitting the trimmed model.
+
+| Model | n | χ²(df), scaled | CFI / TLI (scaled) | RMSEA (scaled) | CFI / TLI (robust) | RMSEA (robust) | SRMR |
+|---|---|---|---|---|---|---|---|
+| M6 original (half B) | 2,500 | 4,016 (291) | .969 / .965 | .072 | .854 / .837 | .111 | .070 |
+| **M6 trimmed (half B)** | 2,500 | 2,457 (222) | .981 / .978 | .063 | .870 / .852 | .117 | .058 |
+| M6 trimmed (all 2017 respondents) | 5,000 | 4,695 (222) | .980 / .977 | .063 | .890 / .875 | .105 | .056 |
+
+- Scaled indices, robust CFI/TLI and SRMR improve. Robust RMSEA is essentially unchanged (.111 → .117 in half B; .105 in the full sample), so the remaining misfit comes from elsewhere.
+- **Loadings and reliability are stable.** ECON: egalitarian items .68–.97, individualist items −.87 to −.97, ω = .97. AUTH, RELIG, DISTRUST and INEFF are unchanged (ω = .85, .89, .92, .66).
+- **Factor correlations barely move.** ECON–AUTH −.45 → −.42; ECON–RELIG −.37 → −.34; others within .01.
+- **Remaining misfit:** `economicbias` cross-loading on INEFF (MI = 291) and its residual correlation with `nosay` (MI = 210), plus residual correlations between reverse-worded egalitarian items (MI ≈ 185). These are now the main targets for an ESEM or correlated-residual follow-up.
+
 **Wiki links:** [[cultural-statement-measures]], [[continuous-cultural-types]], [[grid-group-typology]], [[fatalism]], [[egalitarianism]], [[individualism]], [[hierarchy]], [[hypotheses-testing]].

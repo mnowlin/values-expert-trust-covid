@@ -81,7 +81,609 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
+<!-- target journal is Political Behavior; 9000 word limit -->
+<section id="introduction" class="level1">
+<h1>Introduction</h1>
+</section>
+<section id="values-and-civic-orientations" class="level1">
+<h1>Values and Civic Orientations</h1>
+</section>
+<section id="trust-in-science" class="level1">
+<h1>Trust in Science</h1>
+<section id="impacts-of-covid-19" class="level2">
+<h2 class="anchored" data-anchor-id="impacts-of-covid-19">Impacts of COVID-19</h2>
+</section>
+<section id="hypotheses" class="level2">
+<h2 class="anchored" data-anchor-id="hypotheses">Hypotheses</h2>
+</section>
+</section>
+<section id="data-and-measures" class="level1">
+<h1>Data and Measures</h1>
+</section>
+<section id="results" class="level1">
+<h1>Results</h1>
+<section id="expert-trust-before-and-after-covid-19" class="level2">
+<h2 class="anchored" data-anchor-id="expert-trust-before-and-after-covid-19">Expert trust before and after COVID-19</h2>
+<p><a href="#fig-descriptive" class="quarto-xref">Figure&nbsp;1</a> shows the percentage of panel respondents giving the pro-expert response to each item in 2017 and November 2020. Trust in experts increased on two of the three items. The share disagreeing that they would rather trust ordinary people than experts rose from 51 to 58 percent, and the share disagreeing that scientific facts do not help on important questions rose from 66 to 75 percent. Gains on both items were larger among Democrats than among Republicans.</p>
+<p>The item on experts helping ordinary people understand science and health followed a different pattern. Overall agreement was essentially unchanged (82 percent in 2017 and 82 percent in 2020). However, agreement among Democrats rose from 91 to 95 percent while agreement among Republicans fell from 74 to 70 percent, widening the partisan gap from 17 to 25 points.</p>
+<p>Before modeling change, I tested whether the three items measure expert trust the same way in both waves. As shown in <a href="#tbl-invariance" class="quarto-xref">Table&nbsp;1</a>, constraining thresholds, loadings and intercepts to be equal across waves produced only small changes in fit (CFI = .998, RMSEA = .034). The scaled chi-square difference tests were significant, which is likely given the size of the sample. I therefore treat the expert trust measure as invariant over time. In the unconditional latent change model, expert trust increased by 0.32 standard deviations (in 2017 units), and its standard deviation grew from 1.00 to 1.28. Expert trust was stable at the individual level (r = .85), but the increase in variance indicates that respondents moved apart over the period.</p>
+<div class="cell">
+<div class="cell-output-display">
+<div id="fig-descriptive" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-descriptive-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1: Percent giving the pro-expert response, 2017 and November 2020, by party. Arrows run from 2017 to 2020. Panel respondents present in both waves, weighted (<code>weight_allpanel_2020Nov</code>). Democrats and Republicans include leaners.
+</figcaption>
+<div aria-describedby="fig-descriptive-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="values-expert-trust-covid_files/figure-html/fig-descriptive-1.png" class="img-fluid figure-img" width="672">
+</div>
+</figure>
+</div>
+</div>
+</div>
+<div class="cell">
+<div id="tbl-invariance" class="cell quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-invariance-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;1: Longitudinal measurement invariance of expert trust, 2017 and November 2020. WLSMV, theta parameterization, Wu and Estabrook (2016) identification. Δχ² tests compare each model with the one above it (scaled difference test).
+</figcaption>
+<div aria-describedby="tbl-invariance-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="cell-output-display">
+<table class="cell caption-top table table-sm table-striped small">
+<thead>
+<tr class="header">
+<th style="text-align: left;">Model</th>
+<th style="text-align: right;">χ²</th>
+<th style="text-align: right;">df</th>
+<th style="text-align: right;">CFI</th>
+<th style="text-align: right;">RMSEA</th>
+<th style="text-align: right;">SRMR</th>
+<th style="text-align: right;">Δχ²</th>
+<th style="text-align: right;">Δdf</th>
+<th style="text-align: right;">p</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Configural</td>
+<td style="text-align: right;">9.23</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">1.000</td>
+<td style="text-align: right;">0.018</td>
+<td style="text-align: right;">0.006</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Thresholds</td>
+<td style="text-align: right;">10.69</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">1.000</td>
+<td style="text-align: right;">0.011</td>
+<td style="text-align: right;">0.006</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">+ Loadings</td>
+<td style="text-align: right;">33.81</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">0.999</td>
+<td style="text-align: right;">0.031</td>
+<td style="text-align: right;">0.008</td>
+<td style="text-align: right;">15.87</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">&lt; .001</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">+ Intercepts</td>
+<td style="text-align: right;">47.52</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">0.998</td>
+<td style="text-align: right;">0.034</td>
+<td style="text-align: right;">0.009</td>
+<td style="text-align: right;">13.43</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">.001</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</figure>
+</div>
+</div>
+</section>
+<section id="values-civic-orientations-and-change-in-expert-trust" class="level2">
+<h2 class="anchored" data-anchor-id="values-civic-orientations-and-change-in-expert-trust">Values, civic orientations, and change in expert trust</h2>
+<p><a href="#tbl-main" class="quarto-xref">Table&nbsp;2</a> reports the baseline and change models. As expected, egalitarianism was strongly associated with expert trust in 2017 (β = 0.68). Religiosity (β = -0.18) and political inefficacy (β = -0.21) were associated with lower expert trust, social distrust had a small negative association (β = -0.05), and authoritarianism was unrelated to expert trust. These associations changed little when party ID and ideology were added. Neither party ID nor ideology was associated with baseline expert trust net of the values and civic orientations.</p>
+<p>Egalitarianism was also the primary predictor of change. In the conditional change models, egalitarianism was associated with higher expert trust in 2020 after accounting for expert trust in 2017 (β = 0.35 in Block 1 and 0.22 in Block 2). The latent change models show the same pattern. As shown in <a href="#fig-change" class="quarto-xref">Figure&nbsp;2</a>, a one standard deviation difference in egalitarianism was associated with 0.33 standard deviations more growth in expert trust in Block 1 and 0.17 in Block 2. Because the average increase was 0.32 standard deviations, respondents one standard deviation toward the individualist end of the scale gained approximately no expert trust over the period.</p>
+<p>Religiosity had a small positive association with latent change (0.07 in Block 1 and 0.09 in Block 2) but was not significant in the conditional change models. This is likely because religious respondents had lower expert trust in 2017, and the latent change model does not adjust for starting levels. Authoritarianism, social distrust and political inefficacy were not associated with change in either model.</p>
+<p>Party ID was associated with less growth in expert trust (-0.09 standard deviations per standard deviation of party ID), and ideology had a negative association that was significant in the conditional change model (β = -0.05) but not in the latent change model (p = .058). Adding party ID and ideology reduced the egalitarianism coefficient by about half, but it remained significant (p = .001).</p>
+<div class="cell">
+<div id="tbl-main" class="cell quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-main-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;2: Core values, civic orientations, and expert trust at baseline (2017) and change to November 2020. Standardized coefficients from structural equation models with latent values, civic orientations and expert trust. Baseline and latent change are from the latent change score model; conditional change regresses 2020 expert trust on 2017 expert trust. Block 1 controls for age, gender, race/ethnicity, education, income (with a missing-income indicator) and news interest; Block 2 adds party ID and ideology. * p &lt; .05, ** p &lt; .01, *** p &lt; .001.
+</figcaption>
+<div aria-describedby="tbl-main-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="cell-output-display">
+<table class="cell caption-top table table-sm table-striped small">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 8%">
+<col style="width: 8%">
+<col style="width: 16%">
+<col style="width: 16%">
+<col style="width: 12%">
+<col style="width: 12%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Predictor</th>
+<th style="text-align: right;">Baseline B1</th>
+<th style="text-align: right;">Baseline B2</th>
+<th style="text-align: right;">Conditional change B1</th>
+<th style="text-align: right;">Conditional change B2</th>
+<th style="text-align: right;">Latent change B1</th>
+<th style="text-align: right;">Latent change B2</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Egalitarianism (vs.&nbsp;individualism)</td>
+<td style="text-align: right;">0.68***</td>
+<td style="text-align: right;">0.65***</td>
+<td style="text-align: right;">0.35***</td>
+<td style="text-align: right;">0.22***</td>
+<td style="text-align: right;">0.45***</td>
+<td style="text-align: right;">0.24**</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Authoritarianism</td>
+<td style="text-align: right;">-0.04</td>
+<td style="text-align: right;">-0.04</td>
+<td style="text-align: right;">-0.04</td>
+<td style="text-align: right;">-0.04</td>
+<td style="text-align: right;">-0.06</td>
+<td style="text-align: right;">-0.07</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Religiosity</td>
+<td style="text-align: right;">-0.18***</td>
+<td style="text-align: right;">-0.19***</td>
+<td style="text-align: right;">0.02</td>
+<td style="text-align: right;">0.04</td>
+<td style="text-align: right;">0.09*</td>
+<td style="text-align: right;">0.13**</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Social distrust</td>
+<td style="text-align: right;">-0.05*</td>
+<td style="text-align: right;">-0.06*</td>
+<td style="text-align: right;">-0.02</td>
+<td style="text-align: right;">-0.01</td>
+<td style="text-align: right;">-0.02</td>
+<td style="text-align: right;">0.00</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Political inefficacy</td>
+<td style="text-align: right;">-0.21***</td>
+<td style="text-align: right;">-0.20***</td>
+<td style="text-align: right;">-0.01</td>
+<td style="text-align: right;">-0.02</td>
+<td style="text-align: right;">0.03</td>
+<td style="text-align: right;">0.02</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Party ID (Republican high)</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;">0.01</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;">-0.07**</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;">-0.13**</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Ideology (conservative high)</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;">-0.01</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;">-0.05*</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;">-0.08</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Expert trust, 2017</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;">0.58***</td>
+<td style="text-align: right;">0.62***</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">N</td>
+<td style="text-align: right;">2522</td>
+<td style="text-align: right;">2447</td>
+<td style="text-align: right;">2522</td>
+<td style="text-align: right;">2447</td>
+<td style="text-align: right;">2522</td>
+<td style="text-align: right;">2447</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">CFI</td>
+<td style="text-align: right;">0.972</td>
+<td style="text-align: right;">0.906</td>
+<td style="text-align: right;">0.972</td>
+<td style="text-align: right;">0.906</td>
+<td style="text-align: right;">0.972</td>
+<td style="text-align: right;">0.906</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RMSEA</td>
+<td style="text-align: right;">0.050</td>
+<td style="text-align: right;">0.047</td>
+<td style="text-align: right;">0.050</td>
+<td style="text-align: right;">0.047</td>
+<td style="text-align: right;">0.050</td>
+<td style="text-align: right;">0.047</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</figure>
+</div>
+</div>
+<div class="cell">
+<div class="cell-output-display">
+<div id="fig-change" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-change-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;2: Difference in latent change in expert trust, 2017 to November 2020, associated with a one standard deviation difference in each predictor, in 2017 standard deviation units, with 95% confidence intervals. From the latent change score models in <a href="#tbl-main" class="quarto-xref">Table&nbsp;2</a>.
+</figcaption>
+<div aria-describedby="fig-change-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="values-expert-trust-covid_files/figure-html/fig-change-1.png" class="img-fluid figure-img" width="672">
+</div>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="specificity-and-pre-trends" class="level2">
+<h2 class="anchored" data-anchor-id="specificity-and-pre-trends">Specificity and pre-trends</h2>
+<p><a href="#tbl-items" class="quarto-xref">Table&nbsp;3</a> reports models for single trust items. Egalitarianism was associated with increases in each of the three expert items (β = 0.38 to 0.52) and with higher confidence in the CDC in 2020 net of expert trust in 2017 (β = 0.31). The association was weaker for trust in the federal government (β = 0.23). Egalitarianism was associated with declines or no change in confidence in the Supreme Court (β = -0.16), big business (β = -0.09) and the military (β = -0.03). Value-based change was therefore larger for experts and science than for government and other institutions.</p>
+<p>However, egalitarianism predicted change in media trust before the pandemic (β = 0.35 from January to November 2019) about as strongly as during it (β = 0.41 from November 2019 to November 2020), although the two windows differ in length. Egalitarians and individualists were already diverging in their trust of information sources before COVID-19, and the change in expert trust likely reflects, in part, a trend that predates the pandemic.</p>
+<p>The civic orientations show a different pattern from the values. Political inefficacy was associated with declines in the experts-help item (β = -0.10) and in media trust in both periods (β = -0.08). Social distrust was associated with lower confidence in the CDC (β = -0.14) and with declines in confidence in the military, the Supreme Court and big business.</p>
+<div class="cell">
+<div id="tbl-items" class="cell quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-items-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;3: Values, civic orientations, and change in single trust items. Standardized coefficients from models with each item’s later wave as an ordinal outcome, the earlier wave as a lagged predictor, and Block 1 controls. Windows: expert items and trust in the federal government, 2017 to November 2020; confidence in the military, Supreme Court and big business, January 2019 to November 2020; media trust as labeled. Confidence in the CDC was asked only in November 2020; its model uses latent 2017 expert trust as the lag. * p &lt; .05, ** p &lt; .01, *** p &lt; .001.
+</figcaption>
+<div aria-describedby="tbl-items-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="cell-output-display">
+<table class="cell caption-top table table-sm table-striped small">
+<colgroup>
+<col style="width: 39%">
+<col style="width: 4%">
+<col style="width: 11%">
+<col style="width: 13%">
+<col style="width: 11%">
+<col style="width: 8%">
+<col style="width: 10%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Outcome</th>
+<th style="text-align: right;">N</th>
+<th style="text-align: right;">Egalitarian</th>
+<th style="text-align: right;">Authoritarian</th>
+<th style="text-align: right;">Religiosity</th>
+<th style="text-align: right;">Distrust</th>
+<th style="text-align: right;">Inefficacy</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Experts help (science, health)</td>
+<td style="text-align: right;">2502</td>
+<td style="text-align: right;">0.52***</td>
+<td style="text-align: right;">-0.01</td>
+<td style="text-align: right;">-0.00</td>
+<td style="text-align: right;">-0.04</td>
+<td style="text-align: right;">-0.10***</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Scientific facts help</td>
+<td style="text-align: right;">2504</td>
+<td style="text-align: right;">0.38***</td>
+<td style="text-align: right;">-0.07*</td>
+<td style="text-align: right;">-0.05*</td>
+<td style="text-align: right;">-0.05</td>
+<td style="text-align: right;">-0.04</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Trust experts over ordinary people</td>
+<td style="text-align: right;">2501</td>
+<td style="text-align: right;">0.44***</td>
+<td style="text-align: right;">-0.05</td>
+<td style="text-align: right;">-0.02</td>
+<td style="text-align: right;">-0.01</td>
+<td style="text-align: right;">-0.06*</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Confidence: CDC</td>
+<td style="text-align: right;">2522</td>
+<td style="text-align: right;">0.31***</td>
+<td style="text-align: right;">0.06</td>
+<td style="text-align: right;">0.06*</td>
+<td style="text-align: right;">-0.14***</td>
+<td style="text-align: right;">-0.00</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Trust federal government</td>
+<td style="text-align: right;">2515</td>
+<td style="text-align: right;">0.23***</td>
+<td style="text-align: right;">0.09</td>
+<td style="text-align: right;">0.04</td>
+<td style="text-align: right;">-0.05</td>
+<td style="text-align: right;">-0.08</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Confidence: military</td>
+<td style="text-align: right;">2402</td>
+<td style="text-align: right;">-0.03</td>
+<td style="text-align: right;">0.08*</td>
+<td style="text-align: right;">0.01</td>
+<td style="text-align: right;">-0.08**</td>
+<td style="text-align: right;">-0.07**</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Confidence: Supreme Court</td>
+<td style="text-align: right;">2410</td>
+<td style="text-align: right;">-0.16***</td>
+<td style="text-align: right;">0.06</td>
+<td style="text-align: right;">0.02</td>
+<td style="text-align: right;">-0.10***</td>
+<td style="text-align: right;">-0.05</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Confidence: big business</td>
+<td style="text-align: right;">2404</td>
+<td style="text-align: right;">-0.09**</td>
+<td style="text-align: right;">0.10*</td>
+<td style="text-align: right;">0.03</td>
+<td style="text-align: right;">-0.08**</td>
+<td style="text-align: right;">-0.08**</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Media trust, pre (Jan to Nov 2019)</td>
+<td style="text-align: right;">2410</td>
+<td style="text-align: right;">0.35***</td>
+<td style="text-align: right;">0.01</td>
+<td style="text-align: right;">-0.02</td>
+<td style="text-align: right;">-0.02</td>
+<td style="text-align: right;">-0.08***</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Media trust, post (Nov 2019 to Nov 2020)</td>
+<td style="text-align: right;">2431</td>
+<td style="text-align: right;">0.41***</td>
+<td style="text-align: right;">-0.01</td>
+<td style="text-align: right;">-0.02</td>
+<td style="text-align: right;">-0.01</td>
+<td style="text-align: right;">-0.08***</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</figure>
+</div>
+</div>
+</section>
+<section id="covid-19-exposure" class="level2">
+<h2 class="anchored" data-anchor-id="covid-19-exposure">COVID-19 exposure</h2>
+<p><a href="#tbl-exposure" class="quarto-xref">Table&nbsp;4</a> compares respondents who reported someone sick with COVID-19 in at least one circle (n = 1,404) with those who did not (n = 1,118). The association between egalitarianism and change in expert trust was smaller among exposed respondents (0.34 compared with 0.58), which is consistent with exposure reducing value-based divergence. However, the difference was not statistically significant at conventional levels (p = .059). Religiosity was associated with increases in expert trust only among exposed respondents (0.24 compared with -0.01, p = .015). Authoritarianism had a negative association with change among exposed respondents and a positive association among those not exposed, but neither coefficient nor the difference between them was significant (p = .060). Differences for social distrust and political inefficacy were not significant.</p>
+<div class="cell">
+<div id="tbl-exposure" class="cell quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-exposure-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;4: Values, civic orientations, and latent change in expert trust by personal exposure to COVID-19. Multigroup latent change score model (Block 1); exposed respondents reported someone sick with COVID-19 in at least one circle (self, immediate family, work, close friend) in September or November 2020. Unstandardized coefficients (standard errors), with loadings and thresholds equal across groups. Difference p is from a Wald test of equal coefficients across groups. * p &lt; .05, ** p &lt; .01, *** p &lt; .001.
+</figcaption>
+<div aria-describedby="tbl-exposure-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="cell-output-display">
+<table class="cell caption-top table table-sm table-striped small">
+<colgroup>
+<col style="width: 44%">
+<col style="width: 19%">
+<col style="width: 19%">
+<col style="width: 16%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Predictor</th>
+<th style="text-align: right;">Not exposed</th>
+<th style="text-align: right;">Exposed</th>
+<th style="text-align: right;">Difference p</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Egalitarianism (vs.&nbsp;individualism)</td>
+<td style="text-align: right;">0.58 (0.12)***</td>
+<td style="text-align: right;">0.34 (0.07)***</td>
+<td style="text-align: right;">0.059</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Authoritarianism</td>
+<td style="text-align: right;">0.06 (0.09)</td>
+<td style="text-align: right;">-0.20 (0.10)</td>
+<td style="text-align: right;">0.060</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Religiosity</td>
+<td style="text-align: right;">-0.01 (0.07)</td>
+<td style="text-align: right;">0.24 (0.07)***</td>
+<td style="text-align: right;">0.015</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Social distrust</td>
+<td style="text-align: right;">-0.11 (0.08)</td>
+<td style="text-align: right;">0.06 (0.10)</td>
+<td style="text-align: right;">0.191</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Political inefficacy</td>
+<td style="text-align: right;">-0.02 (0.08)</td>
+<td style="text-align: right;">0.11 (0.07)</td>
+<td style="text-align: right;">0.230</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</figure>
+</div>
+</div>
+</section>
+<section id="change-in-expert-trust-and-covid-19-attitudes" class="level2">
+<h2 class="anchored" data-anchor-id="change-in-expert-trust-and-covid-19-attitudes">Change in expert trust and COVID-19 attitudes</h2>
+<p><a href="#tbl-consequences" class="quarto-xref">Table&nbsp;5</a> shows the association between change in expert trust and COVID-19 attitudes in November 2020, controlling for expert trust in 2017, the values and civic orientations, party ID, ideology and approval of Trump in 2017. Respondents whose expert trust increased more were less approving of Trump’s handling of COVID-19 (β = -0.20), more approving of their governor’s handling (β = 0.18) and more likely to worry that restrictions would be lifted too quickly (β = 0.31). Trump’s messaging on COVID-19 likely contributed to declines in expert trust, so the association with approval of Trump likely runs in both directions. I therefore interpret these results as associations rather than effects of change in expert trust.</p>
+<div class="cell">
+<div id="tbl-consequences" class="cell quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-consequences-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;5: Latent change in expert trust (2017 to November 2020) and November 2020 COVID-19 attitudes. Standardized coefficients from a latent change score model with the three attitudes as ordinal outcomes, controlling for 2017 expert trust, core values, civic orientations, Block 2 covariates and 2017 approval of Trump. * p &lt; .05, ** p &lt; .01, *** p &lt; .001.
+</figcaption>
+<div aria-describedby="tbl-consequences-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="cell-output-display">
+<table class="cell caption-top table table-sm table-striped small">
+<colgroup>
+<col style="width: 47%">
+<col style="width: 28%">
+<col style="width: 23%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Outcome</th>
+<th style="text-align: right;">Change in expert trust</th>
+<th style="text-align: right;">Expert trust, 2017</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Approve of Trump’s COVID handling</td>
+<td style="text-align: right;">-0.20***</td>
+<td style="text-align: right;">-0.24***</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Approve of governor’s COVID handling</td>
+<td style="text-align: right;">0.18***</td>
+<td style="text-align: right;">-0.04</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Worry restrictions lifted too quickly</td>
+<td style="text-align: right;">0.31***</td>
+<td style="text-align: right;">0.17**</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</figure>
+</div>
+</div>
+</section>
+<section id="robustness" class="level2">
+<h2 class="anchored" data-anchor-id="robustness">Robustness</h2>
+<p><a href="#tbl-robust" class="quarto-xref">Table&nbsp;6</a> compares the latent change estimates across specifications. Egalitarianism remained the strongest predictor of change when party ID alone was added (0.22) and when both party ID and ideology were added (0.17). The religiosity coefficient was stable across specifications, and party ID was negatively associated with change with or without ideology in the model.</p>
+<div class="cell">
+<div id="tbl-robust" class="cell quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-robust-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;6: Latent change in expert trust per one standard deviation of each predictor (2017 standard deviation units), with and without party ID and ideology. * p &lt; .05, ** p &lt; .01, *** p &lt; .001.
+</figcaption>
+<div aria-describedby="tbl-robust-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="cell-output-display">
+<table class="cell caption-top table table-sm table-striped small">
+<colgroup>
+<col style="width: 38%">
+<col style="width: 8%">
+<col style="width: 21%">
+<col style="width: 30%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Predictor</th>
+<th style="text-align: right;">Block 1</th>
+<th style="text-align: right;">Block 2: party only</th>
+<th style="text-align: right;">Block 2: party and ideology</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Egalitarianism (vs.&nbsp;individualism)</td>
+<td style="text-align: right;">0.33***</td>
+<td style="text-align: right;">0.22***</td>
+<td style="text-align: right;">0.17**</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Authoritarianism</td>
+<td style="text-align: right;">-0.04</td>
+<td style="text-align: right;">-0.05</td>
+<td style="text-align: right;">-0.05</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Religiosity</td>
+<td style="text-align: right;">0.07*</td>
+<td style="text-align: right;">0.07*</td>
+<td style="text-align: right;">0.09**</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Social distrust</td>
+<td style="text-align: right;">-0.02</td>
+<td style="text-align: right;">-0.00</td>
+<td style="text-align: right;">0.00</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Political inefficacy</td>
+<td style="text-align: right;">0.02</td>
+<td style="text-align: right;">0.01</td>
+<td style="text-align: right;">0.01</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Party ID (Republican high)</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;">-0.11***</td>
+<td style="text-align: right;">-0.09**</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Ideology (conservative high)</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;">-0.06</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</figure>
+</div>
+</div>
+</section>
+</section>
+<section id="discussion" class="level1">
+<h1>Discussion</h1>
+</section>
+<section id="conclusion" class="level1">
+<h1>Conclusion</h1>
 <div style="page-break-after: always;"></div>
+</section>
 <section id="references" class="level1">
 <h1>References</h1>
 </section>
